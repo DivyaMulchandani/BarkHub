@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtnearme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/near_me"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/etsrc"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtnearme"
+        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/text_background"
+        android:hint="  Search"
+        android:inputType="textEmailAddress" />
+
+    <ScrollView
+        android:id="@+id/listofngos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/etsrc">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ngo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgngo1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/n1"/>
+
+                <TextView
+                    android:id="@+id/txtngoname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ngoname1"
+                    android:layout_toRightOf="@+id/imgngo1"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtngoadd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ngoadd1"
+                    android:layout_toRightOf="@+id/imgngo1"
+                    android:layout_below="@+id/txtngoname1"/>
+
+                <ImageButton
+                    android:id="@+id/call"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/ic_call" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ngo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgngo2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/n2"/>
+
+                <TextView
+                    android:id="@+id/txtngoname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo2"
+                    android:text="@string/ngoname2"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtngoadd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ngoadd2"
+                    android:layout_below="@+id/txtngoname2"
+                    android:layout_toRightOf="@+id/imgngo2"/>
+
+                <ImageButton
+                    android:id="@+id/call1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/ic_call" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ngo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgngo3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/n3"/>
+
+                <TextView
+                    android:id="@+id/txtngoname3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo3"
+                    android:text="@string/ngoname3"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtngoadd3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo3"
+                    android:layout_below="@+id/txtngoname3"
+                    android:text="@string/ngoadd3"
+                    />
+
+                <ImageButton
+                    android:id="@+id/call2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/ic_call" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ngo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgngo4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/n4"/>
+
+                <TextView
+                    android:id="@+id/txtngoname4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo4"
+                    android:textStyle="bold"
+                    android:text="@string/ngoname4"/>
+
+                <TextView
+                    android:id="@+id/txtngoadd4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo4"
+                    android:layout_below="@+id/txtngoname4"
+                    android:text="@string/ngoadd4"/>
+
+                <ImageButton
+                    android:id="@+id/call4"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/ic_call" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ngo5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgngo5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/n5"/>
+
+                <TextView
+                    android:id="@+id/txtngoname5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo5"
+                    android:textStyle="bold"
+                    android:text="@string/ngoname5"/>
+
+                <TextView
+                    android:id="@+id/txtngoadd5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo5"
+                    android:layout_below="@+id/txtngoname5"
+                    android:text="@string/ngoadd5"/>
+
+                <ImageButton
+                    android:id="@+id/call5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/ic_call" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ngo6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgngo6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/n6"/>
+
+                <TextView
+                    android:id="@+id/txtngoname6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo6"
+                    android:text="@string/ngoname6"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtngoadd6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgngo6"
+                    android:layout_below="@+id/txtngoname6"
+                    android:text="@string/ngoadd6"
+                    />
+
+                <ImageButton
+                    android:id="@+id/call6"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/ic_call" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

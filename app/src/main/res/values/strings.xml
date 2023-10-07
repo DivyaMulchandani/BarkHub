@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">BarkHub</string>
+    <string name="des1">Adoption alert\n Age- 1 year\n Currently being fostered at BKC hospital , Surat</string>
+    <string name="postname1">Vadodara animal aid</string>
+    <string name="postname2">Gobblez</string>
+    <string name="to_share">to share</string>
+    <string name="des2">Join us run a mile with or without your pooch. It\'s going to be a fun filled Sunday with loads of games and prizes too. Connect with us to register</string>
+    <string name="img">img</string>
+    <string name="near_me">Near Me</string>
+    <string name="search">Search</string>
+    <string name="ngoadd1">309, Vinayak Commercial Complex, next to Saraswati Complex, Manjalpur, Vadodara, Gujarat 390011</string>
+    <string name="ngoname1">Happy Faces of Vadodara</string>
+    <string name="ngoadd2">Chapad, Vadodara - 391410, Opposite Bhayali Railway, Near Crossing, Near Beel Village, At, Chapad, Gujarat 391440</string>
+    <string name="ngoname2">Vadodara Society for the Prevention of Cruelty to Animals</string>
+    <string name="ngoname3">Vadodara Care for Animal Rescue and Emergency</string>
+    <string name="ngoadd3">73PF+3VV, Vadodara, Gujarat 391440</string>
+    <string name="ngoadd4">2/A, Parshva Puja Shankheshwar Parshwanath Marg Shrenik Park Cross Road, near Amish Hospital, Purushottam Nagar, Akota, Vadodara</string>
+    <string name="ngoname4">Pet Vet Clinic, Vadodara</string>
+    <string name="ngoname5">Veterinary Polyclinic</string>
+    <string name="ngoadd5">859G+M3V, Opp.Jyoti Circle, Shastri Bridge, Alkapuri, Vadodara, Gujarat 390020</string>
+    <string name="ngoname6"><![CDATA[Veterinary Hospital & Wellness Centre]]></string>
+    <string name="ngoadd6">Kirti Mandir Compound, Tilak Rd, opp. SSG Hospital, Vadodara, Gujarat 390001</string>
+</resources>

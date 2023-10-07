@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txthome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true" />
+
+        <ImageButton
+            android:id="@+id/addpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:layout_toLeftOf="@+id/help"/>
+
+        <ImageButton
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_emergency"
+            android:layout_alignParentRight="true"
+            android:text="Help"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+
+        <ImageView
+            android:id="@+id/adopt"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_adopt"
+            />
+
+        <Button
+            android:id="@+id/txtadopt"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Adopt"
+            android:layout_below="@+id/adopt"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:backgroundTint="#607d8b"
+            />
+
+
+        <ImageView
+            android:id="@+id/abuse"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:src="@drawable/abuse"
+            android:layout_toRightOf="@+id/adopt"
+            />
+
+        <Button
+            android:id="@+id/txtabuse"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Abuse"
+            android:layout_toRightOf="@+id/txtadopt"
+            android:layout_below="@+id/abuse"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:backgroundTint="#607d8b"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/events"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_event"
+            android:layout_toRightOf="@+id/abuse"
+            />
+
+        <Button
+            android:id="@+id/txtevent"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Event"
+            android:layout_toRightOf="@+id/txtabuse"
+            android:layout_below="@+id/events"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:backgroundTint="#607d8b"
+            />
+
+        <ImageView
+            android:id="@+id/ngo"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_near_me"
+            android:layout_toRightOf="@+id/events"
+            />
+
+        <Button
+            android:id="@+id/txtngo"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Near"
+            android:layout_toRightOf="@+id/txtevent"
+            android:layout_below="@+id/ngo"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:backgroundTint="#607d8b"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/post1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/postname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/postname1"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgpost1"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:layout_below="@+id/postname1"
+                    android:src="@drawable/a" />
+
+                <ImageButton
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpost1"
+                    android:src="@drawable/ic_like" />
+
+                <ImageButton
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpost1"
+                    android:layout_toEndOf="@+id/like"
+                    android:src="@drawable/ic_comment" />
+
+                <ImageButton
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpost1"
+                    android:layout_toEndOf="@+id/comment"
+                    android:contentDescription="@string/to_share"
+                    android:src="@drawable/ic_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/like"
+                    android:text="@string/des1"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/post2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/postname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/postname2"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgpost2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@+id/postname2"
+                    android:src="@drawable/b" />
+
+                <ImageButton
+                    android:id="@+id/like2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpost2"
+                    android:src="@drawable/ic_like" />
+
+                <ImageButton
+                    android:id="@+id/comment2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpost2"
+                    android:layout_toEndOf="@+id/like2"
+                    android:src="@drawable/ic_comment" />
+
+                <ImageButton
+                    android:id="@+id/share2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgpost2"
+                    android:layout_toEndOf="@+id/comment2"
+                    android:contentDescription="@string/to_share"
+                    android:src="@drawable/ic_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/like2"
+                    android:text="@string/des2"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_chat"/>
+
+</RelativeLayout>
